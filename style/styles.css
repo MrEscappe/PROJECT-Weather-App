@@ -67,7 +67,7 @@ h6 {
 /* MAIN STYLE */
 
 body {
-	background-image: url("/assets/bg_clouds.jpg");
+	background-image: url("../assets/bg_clouds.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;

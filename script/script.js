@@ -46,9 +46,11 @@ searchBtn.addEventListener("click", () => {
 
 async function searchCity(city = "São Paulo") {
 	try {
-		const response = await fetch(`
-        http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=3&lang=pt
-        `);
+		const response = await fetch(
+			`
+        https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=3&lang=pt
+        `
+		);
 		const data = await response.json();
 
 		displayWeather(data);
